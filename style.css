@@ -43,6 +43,7 @@ f-s = font-size;
     --grid-f-f: row wrap;
     --grid-j-c: space-evenly;
     --grid-a-i: center;
+    --grid-b: 5px solid orange;
     /*--grid-m-t: 10%;*/
 
     --project-item-h: 70vh;
@@ -121,7 +122,8 @@ main {
 }
 
 .grid {
-    /*background-color: green;*/
+    background-color: green;
+    border: var(--grid-b);
     height: var(--grid-h);
     width: var(--grid-w);
     display: var(--grid-d);
@@ -141,8 +143,7 @@ main {
     flex-direction: var(--project-item-f-d);
     justify-content: var(--project-item-j-c);
     align-items: var(--project-item-a-i);
-    border-radius: var(--project-item-b-r);
-    /*border: 50px solid black;*/
+    /*border-radius: var(--project-item-b-r);*/
 }
 
 .img-preview {
