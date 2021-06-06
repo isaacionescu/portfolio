@@ -144,7 +144,7 @@ main {
 }
 
 .img-preview {
-    /*background-color: blue;*/
+    background-color: blue;
     /*border: var(--img-preview-b);*/
     height: var(--img-preview-h);
     width: var(--img-preview-w);
@@ -158,7 +158,7 @@ main {
 }
 
 #calculator {
-    background-image: url('calculator.jpg');
+    /*background-image: url('calculator.jpg');*/
     background-size: cover;
 }
 
