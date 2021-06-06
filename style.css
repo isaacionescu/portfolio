@@ -149,7 +149,7 @@ main {
     height: var(--img-preview-h);
     width: var(--img-preview-w);
     border-radius: var(--img-preview-b-r);
-    background: transparent;
+    /*background: transparent;*/
 }
 
 #dogiac {
