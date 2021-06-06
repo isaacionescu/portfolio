@@ -158,7 +158,7 @@ main {
 }
 
 .project-item > #calculator {
-    background-image: url('./img/calculator.jpg');
+    background-image: url(./img/calculator.jpg);
     background-size: cover;
 }
 
