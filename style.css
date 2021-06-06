@@ -131,7 +131,7 @@ main {
 }
 
 .project-item {
-    /*background-color: pink;*/
+    background-color: pink;
     /*border: var(--project-item-b);*/
     height: var(--project-item-h);
     width: var(--project-item-w);
