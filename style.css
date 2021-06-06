@@ -1,0 +1,195 @@
+/*
+LEGEND:
+h = height;
+w = width;
+m = margin;
+p = padding;
+d = display;
+f-d = flex-direction;
+g-t = grid-template
+j-c = justify-content;
+a-i = align-items;
+t-a = text-align;
+b = border;
+b-r = border-radius;
+t, b, l, r = top, bottom, right, left;
+f-s = font-size;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap');
+
+:root {
+    --color1: #6DF6F6;
+    --color2: white;
+
+    --header-h: 15vh;
+    --header-d: flex;
+    --header-f-d: row;
+    --header-j-c: center;
+    --header-a-i: flex-end;
+
+    /*--header-text-box-m: 20px;*/
+    /*--header-f-s: 2rem;*/
+
+    --main-h: 85vh;
+    --main-d: flex;
+    --main-j-c: center;
+    --main-a-i: center;
+
+    --grid-h: 100%;
+    --grid-w: 70%;
+    --grid-d: flex;
+    --grid-f-f: row wrap;
+    --grid-j-c: space-evenly;
+    --grid-a-i: center;
+    /*--grid-m-t: 10%;*/
+
+    --project-item-h: 70vh;
+    --project-item-w: 70vh;
+    --project-item-d: flex;
+    --project-item-f-f: column;
+    --project-item-j-c: space-around;
+    --project-item-a-i: center;
+    --project-item-b: 5px solid black;
+    /*--project-item-b-r: 10px;*/
+
+    --img-preview-h: 70%;
+    --img-preview-w: 70%;
+    --img-preview-b: 5px solid black;
+    --img-preview-b-r: 10px;
+
+    --description-box-w: 80%;
+    --description-box-h: 15%;
+    --description-box-j-c: center;
+    --description-box-t-a: center;
+
+    --description-text-m-b: 5%;
+
+    --h3-t-a: left;
+}
+
+.no-highlight {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+textarea, input {
+    outline: none;
+}
+::selection {
+    background-color: transparent;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+    /*background-color: var(--color1);*/
+    height: var(--header-h);
+    display: var(--header-d);
+    flex-direction: var(--header-f-d);
+    justify-content: var(--header-j-c);
+    align-items: var(--header-a-i);
+    width: 100vw;
+}
+
+.header-text-box {
+    /*background-color: yellow;*/
+    margin: var(--header-text-box-m);
+    color: black;
+    /*font-size: var(--header-f-s);*/
+}
+
+main {
+    /*background-color: yellow;*/
+    display: var(--main-d);
+    justify-content: var(--main-j-c);
+    height: var(--main-h);
+    /*width: 100vw;*/
+}
+
+.grid {
+    /*background-color: green;*/
+    height: var(--grid-h);
+    width: var(--grid-w);
+    display: var(--grid-d);
+    flex-flow: var(--grid-f-f);
+    justify-content: var(--grid-j-c);
+    align-items: var(--grid-a-i);
+    /*margin-top: var(--grid-m-t);*/
+}
+
+.project-item {
+    /*background-color: pink;*/
+    /*border: var(--project-item-b);*/
+    height: var(--project-item-h);
+    width: var(--project-item-w);
+    display: var(--project-item-d);
+    flex-flow: var(--project-item-f-f);
+    justify-content: var(--project-item-j-c);
+    align-items: var(--project-item-a-i);
+    /*border-radius: var(--project-item-b-r);*/
+    /*border: 50px solid black;*/
+}
+
+.project-item > .img-preview {
+    /*background-color: blue;*/
+    /*border: var(--img-preview-b);*/
+    height: var(--img-preview-h);
+    width: var(--img-preview-w);
+    border-radius: var(--img-preview-b-r);
+    background: transparent;
+}
+
+.project-item > #dogiac {
+    background: url('./img/dogiac.jpg') 50% 0% no-repeat;
+    background-size: cover;
+}
+
+.project-item > #calculator {
+    background: url('./img/calculator.jpg') 0% 10% no-repeat ;
+    background-size: cover;
+}
+
+.description-box {
+    /*background-color: purple;*/
+    /*border: 2px solid white;*/
+    height: var(--description-box-h);
+    width: var(--description-box-w);
+    justify-content: var(--description-box-j-c);
+    line-height: 1;
+    text-align: center;
+    font-size: 0.8rem;
+    /*overflow: hidden;*/
+}
+
+a {
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.description-text { /*<h2> elements basically*/
+    /*background-color: yellow;*/
+    margin-bottom: var(--description-text-m-b);
+    /*display: inline;*/
+}
+
+
+h3 {
+    /*background-color: cyan;*/
+    /*text-align: var(--h3-t-a);*/
+}
+
