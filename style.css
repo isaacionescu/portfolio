@@ -152,17 +152,18 @@ main {
     height: var(--img-preview-h);
     width: var(--img-preview-w);
     border-radius: var(--img-preview-b-r);
-    /*background: transparent;*/
+    background-image: url('calculator.jpg');
+    background-size: cover;
 }
 
 #dogiac {
-    background: url('./img/dogiac.jpg') 50% 0% no-repeat;
-    background-size: cover;
+/*    background: url('./img/dogiac.jpg') 50% 0% no-repeat;
+    background-size: cover;*/
 }
 
 #calculator {
-    /*background-image: url('calculator.jpg');*/
-    background-size: cover;
+/*    background-image: url('calculator.jpg');
+    background-size: cover;*/
 }
 
 .description-box {
