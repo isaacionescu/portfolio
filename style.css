@@ -48,7 +48,8 @@ f-s = font-size;
     --project-item-h: 70vh;
     --project-item-w: 70vh;
     --project-item-d: flex;
-    --project-item-f-f: column;
+    --project-item-f-f: column wrap;
+    /*--project-item-f-d: column;*/
     --project-item-j-c: space-around;
     --project-item-a-i: center;
     --project-item-b: 5px solid black;
@@ -132,14 +133,15 @@ main {
 
 .project-item {
     background-color: pink;
-    /*border: var(--project-item-b);*/
+    border: var(--project-item-b);
     height: var(--project-item-h);
     width: var(--project-item-w);
     display: var(--project-item-d);
     flex-flow: var(--project-item-f-f);
+    flex-direction: var(--project-item-f-d);
     justify-content: var(--project-item-j-c);
     align-items: var(--project-item-a-i);
-    /*border-radius: var(--project-item-b-r);*/
+    border-radius: var(--project-item-b-r);
     /*border: 50px solid black;*/
 }
 
