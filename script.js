@@ -1,14 +1,16 @@
 const imgPreview = document.querySelectorAll('.img-preview')
-console.log(imgPreview)
 
 class App{
 	constructor() {
+		this.windowSize = window.screen.width;
 		this.addEventListeners();
 	}
 
 	addEventListeners() {
 		document.body.addEventListener("mouseover", event => {
 			this.highlight()
+			// console.log('you moved mouse')
+
 		})
 
 		document.body.addEventListener("mouseout", event => {
@@ -22,7 +24,7 @@ class App{
 			if(event.target.matches('.img-preview')) {
 				destination.classList.remove('unhighlight')
 				destination.classList.add('highlight');
-				console.log('Selecting works')
+				// console.log('Selecting works')
 		} 
 	}
 
@@ -34,7 +36,6 @@ class App{
 		}
 	}
 }
-
 
 new App()	
 
