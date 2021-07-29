@@ -9,8 +9,6 @@ class App{
 	addEventListeners() {
 		document.body.addEventListener("mouseover", event => {
 			this.highlight()
-			// console.log('you moved mouse')
-
 		})
 
 		document.body.addEventListener("mouseout", event => {
@@ -24,7 +22,6 @@ class App{
 			if(event.target.matches('.img-preview')) {
 				destination.classList.remove('unhighlight')
 				destination.classList.add('highlight');
-				// console.log('Selecting works')
 		} 
 	}
 
@@ -37,14 +34,4 @@ class App{
 	}
 }
 
-new App()	
-
-
-
-
-
-
-
-
-
-
+new App()
